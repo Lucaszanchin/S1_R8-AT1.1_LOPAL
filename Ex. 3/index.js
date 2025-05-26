@@ -9,7 +9,11 @@ for (let i = 0; i < quantidade; i++) {
         alert("Número inválido. Digite um número, por favor.");}
 }
 
-let busca = parseInt(prompt("Digite um número para verificar quantas vezes ele aparece: ")); // Pedimos um número que será procurado dentro do vetor
+let busca = parseInt(prompt("Digite um número para verificar quantas vezes ele aparece: "));{ 
+    if (isNaN(numero)) { //Não permitirá o usuária digitar outra coisa diferente de um número
+        alert("Número inválido. Digite um número, por favor.");}
+}
+
 let contador = 0; // Criamos uma variável para contar quantas vezes o número aparece
 
 
@@ -18,8 +22,7 @@ for (let i = 0; i < 10; i++) { // Vamos percorrer o vetor comparando cada númer
     if (numeros[i] === busca) {
         contador++;
 
-        if (isNaN(numero)) {
-        alert("Número inválido. Digite um número, por favor.");}
+       
     }
 }
 
